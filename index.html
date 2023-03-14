@@ -6,27 +6,123 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>IP Address Tracker</title>
+
   <style>
-    .attribution { font-size: 11px; text-align: center; justify-content: center; align-items: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --very-dark-gray: hsl(0, 0%, 17%);
+      --dark-gray: hsl(0, 0%, 59%);
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-image: url("images/pattern-bg-desktop.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .main-title {
+      color: white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
+
+    .search-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 2em;
+      margin-bottom: 2em;
+
+    }
+
+    .title {
+      color: var(--dark-gray);
+    }
+
+    .content {
+      color: var(--very-dark-gray);
+    }
+
+    .info-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .section {
+      padding-right: 6em;
+      border-right: 1px solid var(--dark-gray);
+      padding-left: 2em;
+    }
+
+    .attribution {
+      font-size: 11px; text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+
 </head>
 <body>
 
-  <div>
+  <div class="main-title">
     IP Address Tracker
   </div>
 
-  Search for any IP address or domain
+  <div class="search-bar">
+    <input type="text" placeholder="Search for any IP address or domain">
+    <button>></button>
+  </div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <div class="info-section">
+
+    <div class="section">
+      <div class="title">
+        IP Address
+      </div>
+      <div >
+        <!-- add IP address value dynamically using the API -->
+        ADD IP Address HERE
+      </div>
+    </div>
+    <div class="section">
+      <div class="title">
+        Location
+      </div>
+      <div >
+        <!-- add Location value dynamically using the API -->
+        ADD Location HERE
+      </div>
+    </div>
+    <div class="section">
+      <div class="title">
+        IP Timezone
+      </div>
+      <div >
+        <!-- add Timezone value dynamically using the API -->
+        ADD Timezone HERE
+      </div>
+    </div>
+    <div class="section">
+      <div class="title">
+        ISP
+      </div>
+      <div >
+        <!-- add ISP value dynamically using the API -->
+        ADD ISP HERE
+      </div>
+    </div>
+
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
